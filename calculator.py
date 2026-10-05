@@ -10,13 +10,19 @@ def mul(n1, n2):
 def div(n1, n2):
     return n1 / n2
 
+def mod(n1, n2):
+    return n1 % n2
+
+
 print("Please select operation -\n"
       "1. Add\n"
       "2. Subtract\n"
       "3. Multiply\n"
-      "4. Divide\n")
+      "4. Divide\n"
+      "5. Modulus\n")
 
-sel = int(input("Select operation (1-4): "))
+
+sel = int(input("Select operation (1-5): "))
 
 n1 = int(input("Enter first number: "))
 n2 = int(input("Enter second number: "))
@@ -29,5 +35,5 @@ elif sel == 3:
     print(n1, "*", n2, "=", mul(n1, n2))
 elif sel == 4:
     print(n1, "/", n2, "=", div(n1, n2))
-else:
+elif sel == 5:
     print("Invalid input")
